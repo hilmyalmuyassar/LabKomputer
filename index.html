@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Peminjaman Laptop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Isi Formulir Sebelum Meminjam</h2>
+        <p>Hubungi Penanggung Jawab Lab komputer SMPIT Bilingual Nurul Imam Untuk Login</p>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div id="form-container" style="display: none;">
+        <form id="borrow-form">
+            <h2>Formulir Peminjaman Laptop</h2>
+            <label for="loan-date">Tanggal Peminjaman:</label>
+            <input type="date" id="loan-date" required>
+            
+            <label for="return-date">Tanggal Pengembalian:</label>
+            <input type="date" id="return-date" required>
+            
+            <label for="borrower-name">Nama Peminjam:</label>
+            <input type="text" id="borrower-name" required>
+            
+            <label for="laptop-code">Kode Laptop:</label>
+            <input type="text" id="laptop-code" required>
+            
+            <label for="division">Divisi:</label>
+            <input type="text" id="division" required>
+            
+            <label for="purpose">Tujuan Peminjaman:</label>
+            <input type="text" id="purpose" required>
+            
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
